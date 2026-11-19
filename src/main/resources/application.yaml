@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: SimpleLedger
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/simpleledger
+    username: simpleledger
+    password: ${POSTGRES_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+  flyway:
+    enabled: true
